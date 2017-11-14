@@ -78,6 +78,8 @@
 
 		if (event.keyCode === 32) {
 			paused = !paused;
+
+			lib.showNotification(paused ? 'Paused' : 'Unpaused');
 		}
 	});
 
