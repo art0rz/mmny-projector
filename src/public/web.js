@@ -91,12 +91,12 @@
 		nextTimeout(data.timeout);
 	}
 
-	function nextTimeout(timeout) {
+	function nextTimeout(delay) {
 		if (timeout !== undefined) {
 			clearTimeout(timeout);
 		}
 
-		timeout = setTimeout(() => next(), timeout || defaultTimeout);
+		timeout = setTimeout(() => next(), delay || defaultTimeout);
 	}
 
 	function imageRenderer(data) {
