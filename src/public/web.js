@@ -3,6 +3,7 @@
 	let needle = -1;
 	let content = document.getElementById('content');
 	let paused = false;
+	let timeout = -1;
 	const defaultTimeout = 1000 * 160;
 
 	function start() {
@@ -20,12 +21,14 @@
 			.then(res => res.json());
 	}
 
+	function next() {
+		if (paused === false) {
+			go(1);
+		}
+	}
+
 	function go(increment) {
 		let next = needle + increment;
-
-		if (paused) {
-			return;
-		}
 
 		if (next >= urls.length) {
 			next = 0;
@@ -85,13 +88,20 @@
 
 	function iframeRenderer(data) {
 		lib.createElement('iframe', {src: data.src}, null, content);
-		setTimeout(() => go(1), data.timeout || defaultTimeout);
+		nextTimeout(data.timeout);
+	}
+
+	function nextTimeout(timeout) {
+		if (timeout !== undefined) {
+			clearTimeout(timeout);
+		}
+
+		timeout = setTimeout(() => next(), timeout || defaultTimeout);
 	}
 
 	function imageRenderer(data) {
 		lib.createElement('img', {src: data.src, class: 'fit'}, null, content);
-
-		setTimeout(() => go(1), data.timeout || defaultTimeout);
+		nextTimeout(data.timeout);
 	}
 
 	function youtubeRenderer(data) {
