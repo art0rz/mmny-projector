@@ -136,9 +136,11 @@
 				},
 				onStateChange: (event) => {
 					if (event.data === YT.PlayerState.ENDED && video != null) {
-						go(1);
-						video.destroy();
-						video = null;
+						if (paused === false) {
+							go(1);
+							video.destroy();
+							video = null;
+						}
 					}
 				}
 			},
