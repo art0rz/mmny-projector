@@ -11,6 +11,7 @@
 				.then((data) => {
 					urls = data;
 					go(1);
+					lib.showNotification('Arrow keys for navigation<br/>Space to pause/resume');
 				}));
 	}
 
