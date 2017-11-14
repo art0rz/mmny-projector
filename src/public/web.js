@@ -87,7 +87,7 @@
 	});
 
 	function iframeRenderer(data) {
-		lib.createElement('iframe', {src: data.src}, null, content);
+		lib.createElement('iframe', {src: data.src, class: 'iframe'}, null, content);
 		nextTimeout(data.timeout);
 	}
 
