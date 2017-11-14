@@ -62,6 +62,11 @@
 				break;
 			}
 
+			case "video": {
+				videoRenderer(data.data);
+				break;
+			}
+
 			case "iframe": {
 				iframeRenderer(data.data);
 				break;
@@ -101,6 +106,11 @@
 
 	function imageRenderer(data) {
 		lib.createElement('img', {src: data.src, class: 'fit'}, null, content);
+		nextTimeout(data.timeout);
+	}
+
+	function videoRenderer(data) {
+		lib.createElement('video', {src: data.src, autoplay: true, loop: true, class: 'fit'}, null, content);
 		nextTimeout(data.timeout);
 	}
 

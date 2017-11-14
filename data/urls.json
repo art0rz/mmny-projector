@@ -1,9 +1,16 @@
 [
   {
-    "type": "image",
+    "type": "video",
+    "_comment": "city clouds",
+    "data": {
+      "src": "https://i.imgur.com/cW1U0U4.mp4"
+    }
+  },
+  {
+    "type": "video",
     "_comment": "storm",
     "data": {
-      "src": "https://stormandsky.com/gif/7.gif"
+      "src": "https://i.imgur.com/A1BGbHN.mp4"
     }
   },
   {
@@ -14,107 +21,109 @@
     }
   },
   {
-    "type": "image",
-    "_comment": "storm",
-    "data": {
-      "src": "https://i.imgur.com/cW1U0U4.gif"
-    }
-  },
-  {
-    "type": "image",
-    "_comment": "loops",
-    "data": {
-      "src": "https://i.imgur.com/N996dMz.gif"
-    }
-  },
-  {
-    "type": "image",
+    "type": "video",
     "_comment": "galaxy",
     "data": {
-      "src": "https://deography.com/wp-content/uploads/2017/02/ROSETTE-GEO.gif"
+      "src": "https://i.imgur.com/N996dMz.mp4"
     }
   },
   {
-    "type": "image",
+    "type": "video",
     "_comment": "city",
     "data": {
-      "src": "https://secondcropcreative.com/perfectloops/images/The-Lion-City-II-Majulah.gif"
+      "src": "https://i.imgur.com/VSdYe2q.mp4"
     }
   },
   {
-    "type": "image",
+    "type": "video",
     "_comment": "mountains",
     "data": {
-      "src": "https://secondcropcreative.com/perfectloops/images/Mount-Susana-Time-Lapse.gif"
+      "src": "https://i.imgur.com/gRDocuB.mp4"
     }
   },
   {
-    "type": "image",
+    "type": "video",
     "_comment": "aurora",
     "data": {
-      "src": "https://secondcropcreative.com/perfectloops/images/elemental-iceland.gif"
+      "src": "https://i.imgur.com/Oh5fFLA.mp4"
     }
   },
   {
-    "type": "image",
+    "type": "video",
     "_comment": "mountain2",
     "data": {
-      "src": "https://secondcropcreative.com/perfectloops/images/mountain-timelapse.gif"
+      "src": "https://i.imgur.com/KUlwA9v.mp4"
     }
   },
   {
-    "type": "image",
+    "type": "video",
+    "_comment": "simpsons",
     "data": {
-      "src": "http://bestanimations.com/Nature/Fire/simpsons-fire-gif.gif"
+      "src": "https://i.imgur.com/2abNRVj.mp4"
     }
   },
   {
     "type": "youtube",
+    "_comment": "MediaMonks Mixtape Vol II",
     "data": {
       "id": "uN2nqdRLhQ8",
       "seek": 10
     }
   },
   {
-    "type": "image",
+    "type": "video",
+    "_comment": "kevin",
     "data": {
-      "src": "https://i.imgur.com/3QxZ8Jy.gif"
+      "src": "https://i.imgur.com/3QxZ8Jy.mp4"
     }
   },
   {
     "type": "youtube",
+    "_comment": "MediaMonks 2017 AR Reel",
     "data": {
       "id": "wRfoiqilY3k"
     }
   },
   {
-    "type": "image",
+    "type": "video",
+    "_comment": "snow",
     "data": {
-      "src": "http://25.media.tumblr.com/8f8a1a48b69ae147d334edad25564096/tumblr_mvp1bqaBGt1swwqebo1_500.gif"
+      "src": "https://i.imgur.com/Bk9Kej2.mp4"
     }
   },
   {
-    "type": "image",
+    "type": "video",
+    "_comment": "yoshis",
     "data": {
-      "src": "https://i.imgur.com/1XjPB1d.gif"
+      "src": "https://i.imgur.com/1XjPB1d.mp4"
     }
   },
   {
     "type": "youtube",
+    "_comment": "MediaMonks Shanghai APAC Reel",
     "data": {
       "id": "P1slCQl-afc"
     }
   },
   {
-    "type": "image",
+    "type": "video",
+    "_comment": "sun",
     "data": {
-      "src": "https://media.giphy.com/media/l2Sq7UcchYPqoR3vq/giphy.gif"
+      "src": "https://i.imgur.com/ZhzmLTH.mp4"
     }
   },
   {
     "type": "youtube",
+    "_comment": "MediaMonks VR Reel",
     "data": {
       "id": "PIe-aElFAWA"
+    }
+  },
+  {
+    "type": "youtube",
+    "_comment": "PATAGONIA 8K",
+    "data": {
+      "id": "ChOhcHD8fBA"
     }
   },
   {
@@ -124,9 +133,10 @@
     }
   },
   {
-    "type": "image",
+    "type": "video",
+    "_comment": "fireplace cat",
     "data": {
-      "src": "https://i.giphy.com/media/QX76tDFeglhuw/giphy.gif"
+      "src": "https://i.imgur.com/aU8sHUq.mp4"
     }
   }
 ]
