@@ -108,7 +108,7 @@
 		const container = lib.createElement('div', {class: 'youtube'}, null, content);
 		const player = lib.createElement('div', {id: 'ytplayer'}, null, container);
 
-		const video = new YT.Player('ytplayer', {
+		let video = new YT.Player('ytplayer', {
 			height: '360',
 			width: '640',
 			playerVars: {
@@ -125,8 +125,10 @@
 					}
 				},
 				onStateChange: (event) => {
-					if (event.data === YT.PlayerState.ENDED) {
+					if (event.data === YT.PlayerState.ENDED && video != null) {
 						go(1);
+						video.destroy();
+						video = null;
 					}
 				}
 			},
