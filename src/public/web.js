@@ -2,7 +2,7 @@
 	let urls = [];
 	let needle = -1;
 	let content = document.getElementById('content');
-	let paused = false;
+	let paused = true;
 	let timeout = -1;
 	const defaultTimeout = 1000 * 160;
 
@@ -12,7 +12,7 @@
 				.then((data) => {
 					urls = data;
 					go(1);
-					lib.showNotification('Arrow keys for navigation<br/>Space to pause/resume');
+					lib.showNotification('Arrow keys for navigation<br/>Space to pause/resume playlist (currently paused)');
 				}));
 	}
 
