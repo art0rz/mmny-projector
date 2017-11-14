@@ -131,15 +131,22 @@
 			events: {
 				onReady: () => {
 					if (data.seek) {
+						video.playVideo();
 						video.seekTo(data.seek);
 					}
 				},
 				onStateChange: (event) => {
+					if (event.data === YT.PlayerState.PLAYING && data.seek) {
+						console.log('playing')
+					}
 					if (event.data === YT.PlayerState.ENDED && video != null) {
 						if (paused === false) {
 							go(1);
 							video.destroy();
 							video = null;
+						} else {
+							video.playVideo();
+							video.seekTo(data.seek);
 						}
 					}
 				}

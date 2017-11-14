@@ -1,5 +1,19 @@
 [
   {
+    "type": "youtube",
+    "_comment": "animation reel",
+    "data": {
+      "id": "arvLsSSTxjI"
+    }
+  },
+  {
+    "type": "youtube",
+    "_comment": "fall",
+    "data": {
+      "id": "Kw7B1b6YEqY"
+    }
+  },
+  {
     "type": "video",
     "_comment": "city clouds",
     "data": {
@@ -11,13 +25,6 @@
     "_comment": "pi day",
     "data": {
       "src": "http://thankgoditspiday.com/"
-    }
-  },
-  {
-    "type": "youtube",
-    "_comment": "animation reel",
-    "data": {
-      "id": "Ukc3dsR-IAw"
     }
   },
   {
