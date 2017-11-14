@@ -1,0 +1,118 @@
+[
+  {
+    "type": "image",
+    "_comment": "storm",
+    "data": {
+      "src": "https://stormandsky.com/gif/7.gif"
+    }
+  },
+  {
+    "type": "image",
+    "_comment": "loops",
+    "data": {
+      "src": "https://i.imgur.com/N996dMz.gif"
+    }
+  },
+  {
+    "type": "image",
+    "_comment": "galaxy",
+    "data": {
+      "src": "https://deography.com/wp-content/uploads/2017/02/ROSETTE-GEO.gif"
+    }
+  },
+  {
+    "type": "image",
+    "_comment": "city",
+    "data": {
+      "src": "https://secondcropcreative.com/perfectloops/images/The-Lion-City-II-Majulah.gif"
+    }
+  },
+  {
+    "type": "image",
+    "_comment": "mountains",
+    "data": {
+      "src": "https://secondcropcreative.com/perfectloops/images/Mount-Susana-Time-Lapse.gif"
+    }
+  },
+  {
+    "type": "image",
+    "_comment": "aurora",
+    "data": {
+      "src": "https://secondcropcreative.com/perfectloops/images/elemental-iceland.gif"
+    }
+  },
+  {
+    "type": "image",
+    "_comment": "mountain2",
+    "data": {
+      "src": "https://secondcropcreative.com/perfectloops/images/mountain-timelapse.gif"
+    }
+  },
+  {
+    "type": "image",
+    "data": {
+      "src": "http://bestanimations.com/Nature/Fire/simpsons-fire-gif.gif"
+    }
+  },
+  {
+    "type": "youtube",
+    "data": {
+      "id": "uN2nqdRLhQ8",
+      "seek": 10
+    }
+  },
+  {
+    "type": "image",
+    "data": {
+      "src": "https://i.imgur.com/3QxZ8Jy.gif"
+    }
+  },
+  {
+    "type": "youtube",
+    "data": {
+      "id": "wRfoiqilY3k"
+    }
+  },
+  {
+    "type": "image",
+    "data": {
+      "src": "http://25.media.tumblr.com/8f8a1a48b69ae147d334edad25564096/tumblr_mvp1bqaBGt1swwqebo1_500.gif"
+    }
+  },
+  {
+    "type": "image",
+    "data": {
+      "src": "https://i.imgur.com/1XjPB1d.gif"
+    }
+  },
+  {
+    "type": "youtube",
+    "data": {
+      "id": "P1slCQl-afc"
+    }
+  },
+  {
+    "type": "image",
+    "data": {
+      "src": "https://media.giphy.com/media/l2Sq7UcchYPqoR3vq/giphy.gif"
+    }
+  },
+  {
+    "type": "youtube",
+    "data": {
+      "id": "PIe-aElFAWA"
+    }
+  },
+  {
+    "type": "iframe",
+    "data": {
+      "src": "http://dn.ht/picklecat/"
+    }
+  },
+  {
+    "type": "image",
+    "data": {
+      "src": "https://i.giphy.com/media/QX76tDFeglhuw/giphy.gif"
+    }
+  }
+]
