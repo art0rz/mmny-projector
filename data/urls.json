@@ -8,6 +8,13 @@
   },
   {
     "type": "image",
+    "_comment": "storm",
+    "data": {
+      "src": "https://i.imgur.com/cW1U0U4.gif"
+    }
+  },
+  {
+    "type": "image",
     "_comment": "loops",
     "data": {
       "src": "https://i.imgur.com/N996dMz.gif"

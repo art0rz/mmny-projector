@@ -10,7 +10,7 @@
 			getURLs()
 				.then((data) => {
 					urls = data;
-					showNext();
+					go(1);
 				}));
 	}
 
@@ -19,8 +19,8 @@
 			.then(res => res.json());
 	}
 
-	function showNext() {
-		let next = needle + 1;
+	function go(increment) {
+		let next = needle + increment;
 
 		if (paused) {
 			return;
@@ -28,6 +28,10 @@
 
 		if (next >= urls.length) {
 			next = 0;
+		}
+
+		if (next < 0) {
+			next = urls.length - 1;
 		}
 
 		if (next !== needle) {
@@ -66,11 +70,16 @@
 	}
 
 	document.addEventListener('keyup', function (event) {
-		if (event.keyCode === 78) { // 'n' key
-			showNext();
+		// 37 left
+		if (event.keyCode === 37) {
+			go(-1);
 		}
 
-		if(event.keyCode === 32) {
+		if (event.keyCode === 39) {
+			go(1);
+		}
+
+		if (event.keyCode === 32) {
 			paused = !paused;
 		}
 	});
@@ -81,7 +90,7 @@
 
 		content.appendChild(iframe);
 
-		setTimeout(() => showNext(), data.timeout || defaultTimeout);
+		setTimeout(() => go(1), data.timeout || defaultTimeout);
 	}
 
 	function imageRenderer(data) {
@@ -90,7 +99,7 @@
 		img.classList.add('fit');
 		content.appendChild(img);
 
-		setTimeout(() => showNext(), data.timeout || defaultTimeout);
+		setTimeout(() => go(1), data.timeout || defaultTimeout);
 	}
 
 	function youtubeRenderer(data) {
@@ -119,8 +128,8 @@
 					}
 				},
 				onStateChange: (event) => {
-					if(event.data === YT.PlayerState.ENDED) {
-						showNext();
+					if (event.data === YT.PlayerState.ENDED) {
+						go(1);
 					}
 				}
 			},
