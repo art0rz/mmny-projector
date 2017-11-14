@@ -43,7 +43,9 @@
 		needle = next;
 		const data = urls[next];
 
-		empty();
+		lib.emptyNode(content);
+
+		lib.showNotification((next + 1) + '/' + urls.length);
 
 		switch (data.type) {
 			case "youtube": {
@@ -63,12 +65,6 @@
 		}
 	}
 
-	function empty() {
-		while (content.hasChildNodes()) {
-			content.removeChild(content.lastChild);
-		}
-	}
-
 	document.addEventListener('keyup', function (event) {
 		// 37 left
 		if (event.keyCode === 37) {
@@ -85,31 +81,19 @@
 	});
 
 	function iframeRenderer(data) {
-		const iframe = document.createElement('iframe');
-		iframe.src = data.src;
-
-		content.appendChild(iframe);
-
+		lib.createElement('iframe', {src: data.src}, null, content);
 		setTimeout(() => go(1), data.timeout || defaultTimeout);
 	}
 
 	function imageRenderer(data) {
-		const img = document.createElement('img');
-		img.setAttribute('src', data.src);
-		img.classList.add('fit');
-		content.appendChild(img);
+		lib.createElement('img', {src: data.src, class: 'fit'}, null, content);
 
 		setTimeout(() => go(1), data.timeout || defaultTimeout);
 	}
 
 	function youtubeRenderer(data) {
-		const container = document.createElement('div');
-		container.classList.add('youtube');
-		const player = document.createElement('div');
-		player.setAttribute('id', 'ytplayer');
-
-		container.appendChild(player);
-		content.appendChild(container);
+		const container = lib.createElement('div', {class: 'youtube'}, null, content);
+		const player = lib.createElement('div', {id: 'ytplayer'}, null, container);
 
 		const video = new YT.Player('ytplayer', {
 			height: '360',
@@ -142,8 +126,7 @@
 			cb();
 		};
 
-		var tag = document.createElement('script');
-		tag.src = "https://www.youtube.com/player_api";
+		const tag = window.lib.createElement('script', {src: 'https://www.youtube.com/player_api'});
 		var firstScriptTag = document.getElementsByTagName('script')[0];
 		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 	}

@@ -75,11 +75,45 @@
             background: transparent url(mask.png) no-repeat 0 0;
             background-size: 100% 100%;
         }
+
+        #notifications {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background: #000;
+            color: #808080;
+            width: 300px;
+            font: 20px/1.4 sans-serif;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .notification {
+            border: 1px solid #4d4d4d;
+            border-bottom: 0;
+            padding: 10px;
+            animation: notification;
+            animation-delay: 5s;
+            animation-timing-function: linear;
+            animation-duration: 3s;
+        }
+
+        @keyframes notification {
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
     </style>
 </head>
 <body>
 <div id="content"></div>
 <div class="mask"></div>
+<div id="notifications"></div>
+<script src="lib.js"></script>
 <script src="web.js"></script>
 </body>
 </html>
