@@ -14,6 +14,14 @@
     }
   },
   {
+    "type": "youtube",
+    "_comment": "bob ross",
+    "data": {
+      "id": "mT0RNrTDHkI",
+      "seek": 254
+    }
+  },
+  {
     "type": "video",
     "_comment": "city clouds",
     "data": {
