@@ -4,6 +4,8 @@
 	let content = document.getElementById('content');
 	let paused = true;
 	let timeout = -1;
+
+	const mask = document.getElementById('mask');
 	const defaultTimeout = 1000 * 160;
 
 	function start() {
@@ -48,8 +50,13 @@
 		const data = urls[next];
 
 		lib.emptyNode(content);
-
 		lib.showNotification((next + 1) + '/' + urls.length);
+
+		if (data.hideMask === true) {
+			mask.style.setProperty('display', 'none');
+		} else {
+			mask.style.setProperty('display', 'block');
+		}
 
 		switch (data.type) {
 			case "youtube": {
