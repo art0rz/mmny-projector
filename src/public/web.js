@@ -1,12 +1,14 @@
 (function () {
+	const hideCursorDelay = 3000;
+	const mask = document.getElementById('mask');
+	const defaultTimeout = 1000 * 160;
+
 	let urls = [];
 	let needle = -1;
 	let content = document.getElementById('content');
 	let paused = true;
 	let timeout = -1;
-
-	const mask = document.getElementById('mask');
-	const defaultTimeout = 1000 * 160;
+	let hideCursorTimeout = -1;
 
 	function start() {
 		loadYTAPI(() =>
@@ -16,6 +18,16 @@
 					go(1);
 					lib.showNotification('Arrow keys for navigation<br/>Space to pause/resume playlist (currently paused)');
 				}));
+
+		document.body.addEventListener('mousemove', function() {
+			document.body.classList.remove('hide-cursor');
+			clearTimeout(hideCursorTimeout);
+			setTimeout(hideCursor, hideCursorDelay);
+		})
+	}
+
+	function hideCursor() {
+		document.body.classList.add('hide-cursor');
 	}
 
 	function getURLs() {
