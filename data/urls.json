@@ -29,157 +29,62 @@
   },
   {
     "type": "youtube",
-    "_comment": "bob ross",
-    "data": {
-      "id": "mT0RNrTDHkI",
-      "seek": 254
-    }
-  },
-  {
-    "type": "video",
-    "_comment": "city clouds",
-    "data": {
-      "src": "https://i.imgur.com/cW1U0U4.mp4"
-    }
-  },
-  {
-    "type": "iframe",
-    "_comment": "pi day",
-    "data": {
-      "src": "http://thankgoditspiday.com/"
-    }
-  },
-  {
-    "type": "video",
-    "_comment": "storm",
-    "data": {
-      "src": "https://i.imgur.com/A1BGbHN.mp4"
-    }
-  },
-  {
-    "type": "youtube",
     "_comment": "fireplace",
     "data": {
       "id": "ZY3J3Y_OU0w"
     }
   },
   {
-    "type": "video",
-    "_comment": "galaxy",
-    "data": {
-      "src": "https://i.imgur.com/N996dMz.mp4"
-    }
-  },
-  {
-    "type": "video",
-    "_comment": "city",
-    "data": {
-      "src": "https://i.imgur.com/VSdYe2q.mp4"
-    }
-  },
-  {
-    "type": "video",
-    "_comment": "mountains",
-    "data": {
-      "src": "https://i.imgur.com/gRDocuB.mp4"
-    }
-  },
-  {
-    "type": "video",
-    "_comment": "aurora",
-    "data": {
-      "src": "https://i.imgur.com/Oh5fFLA.mp4"
-    }
-  },
-  {
-    "type": "video",
-    "_comment": "mountain2",
-    "data": {
-      "src": "https://i.imgur.com/KUlwA9v.mp4"
-    }
-  },
-  {
-    "type": "video",
-    "_comment": "simpsons",
-    "data": {
-      "src": "https://i.imgur.com/2abNRVj.mp4"
-    }
-  },
-  {
-    "type": "youtube",
-    "_comment": "MediaMonks Mixtape Vol II",
-    "data": {
-      "id": "uN2nqdRLhQ8",
-      "seek": 10
-    }
-  },
-  {
-    "type": "video",
-    "_comment": "kevin",
-    "data": {
-      "src": "https://i.imgur.com/3QxZ8Jy.mp4"
-    }
-  },
-  {
-    "type": "youtube",
-    "_comment": "MediaMonks 2017 AR Reel",
-    "data": {
-      "id": "wRfoiqilY3k"
-    }
-  },
-  {
-    "type": "video",
-    "_comment": "snow",
-    "data": {
-      "src": "https://i.imgur.com/Bk9Kej2.mp4"
-    }
-  },
-  {
-    "type": "video",
-    "_comment": "yoshis",
-    "data": {
-      "src": "https://i.imgur.com/1XjPB1d.mp4"
-    }
-  },
-  {
-    "type": "youtube",
-    "_comment": "MediaMonks Shanghai APAC Reel",
-    "data": {
-      "id": "P1slCQl-afc"
-    }
-  },
-  {
-    "type": "video",
-    "_comment": "sun",
-    "data": {
-      "src": "https://i.imgur.com/ZhzmLTH.mp4"
-    }
-  },
-  {
-    "type": "youtube",
-    "_comment": "MediaMonks VR Reel",
-    "data": {
-      "id": "PIe-aElFAWA"
-    }
-  },
-  {
     "type": "youtube",
     "_comment": "PATAGONIA 8K",
     "data": {
-      "id": "ChOhcHD8fBA"
+      "id": "ChOhcHD8fBA",
+	  "seek": 15
     }
   },
   {
-    "type": "iframe",
+    "type": "youtube",
+    "_comment": "ISS Timelapse",
     "data": {
-      "src": "http://dn.ht/picklecat/"
+      "id": "FG0fTKAqZ5g"
     }
   },
   {
-    "type": "video",
-    "_comment": "fireplace cat",
+    "type": "youtube",
+    "_comment": "Moonsoon IV",
     "data": {
-      "src": "https://i.imgur.com/aU8sHUq.mp4"
+      "id": "LbY3DdzV0rA",
+	  "seek": 15
+    }
+  },
+  {
+    "type": "youtube",
+    "_comment": "The Earth",
+    "data": {
+      "id": "7fYKMCCPh28"
+    }
+  },
+  {
+    "type": "youtube",
+    "_comment": "Planet Earth",
+    "data": {
+      "id": "oFDeNcu3mnc",
+	  "seek": 10
+    }
+  },
+  {
+    "type": "youtube",
+    "_comment": "Nature in Motion",
+    "data": {
+      "id": "KgMpKsp23yY",
+	  "seek": 5
+    }
+  },
+  {
+    "type": "youtube",
+    "_comment": "Aurora Borealis",
+    "data": {
+      "id": "NZlfxWMr7nc"
     }
   }
 ]
