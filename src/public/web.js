@@ -138,8 +138,8 @@
 		const player = lib.createElement('div', {id: 'ytplayer'}, null, container);
 
 		let video = new YT.Player('ytplayer', {
-			height: '360',
-			width: '640',
+			height: '1920',
+			width: '1080',
 			playerVars: {
 				controls: 0,
 				showinfo: 0,

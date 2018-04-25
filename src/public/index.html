@@ -25,12 +25,12 @@
             .iframe,
             .mask {
                 position: absolute;
-                top: 0;
+                top: 0px;
                 left: 0;
                 right: 0;
                 bottom: 0;
-                width: 100%;
-                height: 100%;
+                width: 1920px;
+                height: 1080px;
                 overflow: hidden;
                 padding: 0;
                 margin: 0;
@@ -77,9 +77,26 @@
             }
 
             .mask {
-                background: transparent url(mask.png) no-repeat 0 0;
+                background: transparent url(mask/mask.png) no-repeat 0 0;
                 background-size: 100% 100%;
+                top: 1px;
             }
+
+            .mask img {
+                position: absolute;
+            }
+
+            #m1 { top: 275px; left: 355px; }
+            #e { top: 275px; left: 641px; }
+            #d { top: 275px; left: 868px; }
+            #i { top: 275px; left: 1106px; }
+            #a { top: 275px; left: 1327px; }
+
+            #m2 { top: 590px; left: 355px; }
+            #o { top: 590px; left: 641px; }
+            #n { top: 590px; left: 883px; }
+            #k { top: 590px; left: 1127px; }
+            #s { top: 590px; left: 1353px; }
 
             #notifications {
                 position: absolute;
@@ -116,7 +133,19 @@
     </head>
     <body class="hide-cursor">
         <div id="content"></div>
-        <div class="mask" id="mask"></div>
+        <div class="mask" id="mask">
+            <img src="mask/m1.png" id="m1" />
+            <img src="mask/e.png" id="e" />
+            <img src="mask/d.png" id="d" />
+            <img src="mask/i.png" id="i" />
+            <img src="mask/a.png" id="a" />
+            <img src="mask/m2.png" id="m2" />
+            <img src="mask/o.png" id="o" />
+            <img src="mask/n.png" id="n" />
+            <img src="mask/k.png" id="k" />
+            <img src="mask/s.png" id="s" />
+        </div>
+
         <div id="notifications"></div>
         <script src="lib.js"></script>
         <script src="web.js"></script>
