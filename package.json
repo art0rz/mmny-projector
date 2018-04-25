@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cms-json": "^0.2.19",
     "express": "^4.16.2"
   }
 }

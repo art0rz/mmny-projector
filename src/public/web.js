@@ -14,7 +14,7 @@
 		loadYTAPI(() =>
 			getURLs()
 				.then((data) => {
-					urls = data;
+					urls = data.videos;
 					go(1);
 					lib.showNotification('Arrow keys for navigation<br/>Space to pause/resume playlist (currently paused)');
 				}));
@@ -72,23 +72,27 @@
 
 		switch (data.type) {
 			case "youtube": {
-				youtubeRenderer(data.data);
+				youtubeRenderer(data);
 				break;
 			}
 
 			case "image": {
-				imageRenderer(data.data);
+				imageRenderer(data);
 				break;
 			}
 
 			case "video": {
-				videoRenderer(data.data);
+				videoRenderer(data);
 				break;
 			}
 
 			case "iframe": {
-				iframeRenderer(data.data);
+				iframeRenderer(data);
 				break;
+			}
+
+			default: {
+				console.log("invalid type: " + data.type);
 			}
 		}
 	}
