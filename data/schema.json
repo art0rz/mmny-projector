@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "type": "object",
+  "title": "MMNY Projector",
+  "properties": {
+    "videos": {
+      "type": "array",
+      "properties": {},
+      "title": "Videos",
+      "items": {
+        "type": "object",
+        "properties": {
+		  "name": {
+            "type": "string",
+            "title": "Name"
+          },
+		  "type": {
+            "type": "string",
+            "title": "Type",
+            "description": "(youtube, video, iframe, image)"
+          },
+          "id": {
+            "type": "string",
+            "title": "id",
+            "description": "(youtube)"
+          },
+          "src": {
+            "type": "string",
+            "title": "src",
+            "description": "(video, iframe, image)"
+          },
+          "seek": {
+            "type": "string",
+            "title": "seek",
+            "description": "(youtube)"
+          }
+        }
+      }
+    }
+  }
+}
